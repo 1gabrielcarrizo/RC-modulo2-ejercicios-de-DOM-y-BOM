@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <h1 class="text-center text-white mb-3">Ejercicios de DOM y BOM</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Ejercicio 2</li>
+            </ol>
+        </nav>
+        <p class="text-justify text-white enunciado mb-0">2- Crea una clase llamada Persona que siga las siguientes condiciones:</p>
+            <p class="text-justify text-white enunciado mb-0">Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento. Si quieres añadir alguna propiedad extra puedes hacerlo.</p>
+            <p class="text-justify text-white enunciado mb-0">Los métodos que se debe poder utilizar  son:</p>
+            <p class="text-justify text-white enunciado mb-0">mostrarGeneracion: este método debe mostrar un mensaje indicando a qué generación pertenece la persona creada y cual es el rasgo característico de esta generación.</p>
+            <p class="text-justify text-white enunciado mb-0">Para realizar este método tener en cuenta la siguiente tabla de generaciones:</p>
+            <img src="assets/img/imagen1.png" alt="tabla" class="img-test">
+            <p class="text-justify text-white enunciado mb-0">esMayorDeEdad: indica si es mayor de edad, devuelve un mensaje indicando que la persona es mayor de edad.</p>
+            <p class="text-justify text-white enunciado mb-0">mostrarDatos: devuelve toda la información del objeto.</p>
+            <p class="text-justify text-white enunciado mb-3">Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente.</p>
+            <div class="divFormPersona mx-auto my-3 bg-light rounded px-2 pb-2">
+                <h2 class="text-center py-2">Datos Personales</h2>
+                <hr>
+                <form id="formPersona">
+                    <div class="form-row">
+                        <div class="form-group col-lg-4 col-md-4">
+                          <input type="text" class="form-control" id="inputNombre2" placeholder="Nombre" value="" required>
+                        </div>
+                        <div class="form-group col-lg-1 col-md-2">
+                            <input type="tel" class="form-control" id="inputEdad2" required placeholder="Edad" value="" min="1" maxlength="3">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-3">
+                            <input type="tel" class="form-control" id="inputDNI2" required placeholder="DNI" value="" min="1" maxlength="8">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-3">
+                            <select class="custom-select" id="selectSexo2" required>
+                                <option selected disabled value="">Género</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                              </select>
+                        </div>
+                        <div class="form-group col-lg-1 col-md-4">
+                            <input type="tel" class="form-control" id="inputPeso2" value="" required placeholder="Peso" min="1" maxlength="3">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-4">
+                            <input type="tel" class="form-control" id="inputAltura2" value="" required placeholder="Altura" min="1" maxlength="3">
+                        </div>
+                        <div class="form-group col-lg-3 col-md-4">
+                            <input type="tel" class="form-control" id="inputAnio2" value="" required placeholder="Fecha de nacimiento" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-outline-primary mx-auto" id="botonCargar">Cargar datos</button>
+                    </div>
+                </form>
+            </div>
+    </main>
+    <!-- MI JS -->
+    <script src="js/ejercicio2.js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <h1 class="text-center text-white mb-3">Ejercicios de DOM y BOM</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Ejercicio 6</li>
+            </ol>
+        </nav>
+        <p class="text-justify text-white enunciado">6- Realizar una web con un temporizador donde el usuario pueda ingresar un tiempo desde donde comenzará a decrementar el contador. Debe contener los botones, iniciar, pausar y reset.</p>
+        <!-- <h2 class="text-center text-white mb-3"><span id="minuto5">0</span>:<span id="segundo5">0</span></h2> -->
+        <!-- <div id="botones5" class="text-center">
+            <button type="button" id='botonIniciar5' class="btn btn-light btn-lg">Iniciar</button>
+            <button type="button" id='botonPausar5' class="btn btn-light btn-lg mx-5" disabled>Pausar</button>
+            <button type="button" id='botonResetear5' class="btn btn-light btn-lg" disabled>Resetear</button>
+        </div> -->
+        <form id="form" class="text-center">
+            <div id="divInputMinYSeg" class="mb-3">
+                <input type="number" placeholder="Ingresar minuto(s)" id="inputMinuto" min="0">
+                <input type="number" placeholder="Ingresar segundo(s)" id="inputSegundo" min="0">
+            </div>
+            <h2 class="text-center text-white mb-3"><span id="spanMinuto">00</span>:<span id="spanSegundo">00</span></h2>
+            <div id="divBotones">
+                <button type="button" id='botonIniciar' class="btn btn-light btn-lg">Iniciar</button>
+                <button type="button" id='botonPausar' class="btn btn-light btn-lg mx-md-5" disabled>Pausar</button>
+                <button type="button" id='botonResetear' class="btn btn-light btn-lg" disabled>Resetear</button>
+            </div>
+        </form>
+    </main>
+    <!-- MI JS -->
+    <script src="js/ejercicio6.js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

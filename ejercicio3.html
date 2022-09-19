@@ -13,27 +13,24 @@
 <body>
     <main class="container-fluid">
         <h1 class="text-center text-white mb-3">Ejercicios de DOM y BOM</h1>
-        <div class="contenedor-botones text-center">
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio1.html" class="boton-link">Ejercicio 1</a>
-            </button>
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio2.html" class="boton-link">Ejercicio 2</a>
-            </button>
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio3.html" class="boton-link">Ejercicio 3</a>
-            </button>
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio4.html" class="boton-link">Ejercicio 4</a>
-            </button>
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio5.html" class="boton-link">Ejercicio 5</a>
-            </button>
-            <button type="button" class="btn btn-light my-1">
-                <a href="ejercicio6.html" class="boton-link">Ejercicio 6</a>
-            </button>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Ejercicio 3</li>
+            </ol>
+        </nav>
+        <p class="text-justify text-white mb-3 enunciado">3 - Crea una web con bootstrap y js, que contenga un botón input donde se pueda cargar una tarea y un botón que al ser presionado agregue dicha tarea a una lista, cada elemento ingresado en la lista debe poder ser eliminado con un botón creado para ese fin.</p>
+        <div class="divForm mx-auto bg-light rounded px-2 pb-2">
+        <h2 class="text-center py-2">📃 Lista de tareas</h2>
+        <hr>
+        <form id="formLista">
+            <input type="text" class="form-control" id="inputTareas" value="">
+        </form>
+        <ul id="formUl" class="list-group mt-3"></ul>
         </div>
     </main>
+    <!-- MI JS -->
+    <script src="js/ejercicio3.js"></script>
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

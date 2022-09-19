@@ -41,3 +41,9 @@ body{
     background-color: #333;
     color: white;
 }
+
+.boton-link,
+.boton-link:hover{
+    text-decoration: none;
+    color: #333;
+}
